@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
- const useIsOnline=()=> {
+ const useIsOnlineHook=()=> {
   const [isOnline, setIsOnline] = useState(window.navigator.onLine);
 
   useEffect(() => {
@@ -11,4 +11,4 @@ import { useEffect, useState } from 'react'
   return isOnline;
 }
 
-export default useIsOnline
+export default useIsOnlineHook
